@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Montserrat:wght@200&family=Oswald:wght@200&family=Poppins:wght@200;400;700&family=Roboto:wght@300;500;700;900&family=Rubik&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Roboto';
+    background-color: #111111;
+}
+header{
+    margin:10px 30px;
+}
+header .navbar{
+    padding:10px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-img{
+    height: 30px;
+}
+.navbar .lists{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size:13px;
+    margin-right:60px;
+} 
+.navbar .lists .list-item{
+ margin:0px 30px;
+ text-transform: uppercase;
+ color:#fff;
+ cursor: pointer;
+}
+.navbar .lists .list-item:hover,.fa-sort-down:hover{
+    color:#FF3343;
+}
+.fa-sort-down{
+    position:relative;
+    bottom:3px;
+    margin-left:5px;
+    color:#fff;
+    cursor: pointer;
+}
+.banner-image{
+    display:flex;
+    flex-direction: row;
+    margin:0px 150px;
+}
+.banner-left img{
+    width: 350px;
+}
+.banner-right{
+    margin-top: 100px;
+}
+.banner-right .user-intro h3{
+    color:#FF3343;
+    font-size:16px;
+}
+.banner-right .user-intro h1{
+    font-size:44px;
+    color:#fff;
+}
+.banner-right .user-intro p{
+    font-size:14px;
+    margin:10px 0px;
+    line-height: 20px;
+    color:#fff;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.banner-right .user-intro .aboutme{
+    margin-top: 5px;
+    padding:12px 20px;
+    text-transform: uppercase;
+    border:none;
+    outline:0;
+    font-weight: 400;
+    color:#fff;
+    background-color: #c91b28;
+    cursor: pointer;
+    transition: .3s;
+}
+.banner-right .user-intro .aboutme:hover{
+    background-color: #FF3343;
+}
+.service-section .service{
+    position: relative;
+}
+.service .background-div{
+    background-color: #181818;
+    z-index:-1;
+    width: 50%;
+    height: 100%;
+    position:absolute;
+}
+.service .cards{
+    z-index:1;
+    position:relative;
+    padding:40px;
+    margin:0px 100px;
+}
+.cards .service-offer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:50px 0px;
+    column-gap: 100px;
+}
+.service-offer .card{
+    padding:15px 10px;
+    background-color: #1e1e1e;
+}
+.service-icon{
+    font-size:35px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.service-info{
+    margin-left: 15px;
+}
+.service-info h3{
+    margin:15px 0px;
+    color:#fff;
+}
+.service-info p{
+    font-size:16px;
+    font-weight: 200;
+    color:#fff;
+    margin:15px 0px;
+}
+.know-more a, .know-more{
+    font-size:14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#FF3343;
+}
+.fa-arrow-right{
+    margin-left: 3px;
+    color:#FF3343;
+}
+.fa-laptop,.fa-building{
+    color:#c91b28;
+}
+.fa-clipboard{
+    color:#fff;
+}
+.cards .past-work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+}
+.past-work .experience{
+    text-align: center;
+}
+.past-work .experience h1{
+    font-size:80px;
+    font-weight: bolder;
+    color:#c91b28
+}
+.past-work .experience p{
+    font-size:25px;
+    font-weight: 900;
+    color:#fff;
+}
+.project-complete{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 95px;
+    row-gap: 20px;
+}
+.project-work-card{
+    padding:10px 90px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+.project-work-count{
+    font-size:36px;
+    color:#c91b28
+}
+.project-work-name{
+    font-weight: 300;
+    font-size:14px;
+    color:#fff;
+}
+.service-offer .card-2{
+    background-color: #c91b28;
+}
+.know-more-active{
+    color:#fff;
+    text-decoration: none;
+}
+.featured-projects{
+    margin:60px 120px;
+}
+.featured-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+}
+.featured-heading h2{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.featured-heading p{
+    margin:15px 0px;
+}
+.view-all,.contact-btn{
+    font-size:16px;
+    text-transform: uppercase;
+    padding:15px 40px;
+    border:none;
+    outline:0;
+    font-weight: 700;
+    color:#fff;
+    background-color:#FF3343;
+    cursor: pointer;
+}
+.view-all:hover,.contact-btn:hover{
+    background-color:#c91b28;
+}
+.project-list{
+    margin:50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+.project-list .card-body{
+    height: 400px;
+    background-color:#1e1e1e;
+}
+.card-body .project-img{
+    border:none;
+    outline:0;
+}
+.card-body .project-img img{
+    display: block;
+    margin:0px auto;
+    height: 270px;
+    padding:60px 0px;
+}
+.project-info{
+    margin-top: 20px;
+}
+.project-info h1{
+    font-size:26px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color:#fff;
+}
+.contact-us{
+    margin:60px 120px;
+    background-color:#1e1e1e;
+}
+.contact{
+    padding:60px 30px;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    column-gap: 250px;
+}
+.contact-info h1{
+    font-size:50px;
+    color:#fff;
+}
+.contact-info p{
+    margin:15px 0px;
+    font-weight: 400;
+    color:#fff;
+}
+.contact-btn{
+    margin-top: 60px;
+}
+.bottom-link{
+    margin:100px 0px 30px 0px;
+    text-align: center;
+}
+.bottom-link .link{
+    margin: 0px 20px;
+    color:#fff;
+    cursor: pointer;
+}
+.bottom-link .link:hover{
+    color:#FF3343;
+}
+footer{
+    position:relative;
+    bottom:0px;
+    background-color:#1e1e1e;
+}
+.footer{
+    border:1px solid black;
+    padding:20px 110px;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+.social-links{
+    margin-top: 10px;
+}
+.social-links span{
+    margin:0px 10px;
+    cursor: pointer;
+}
+.social-links i{
+    color:#fff;
+}
+.social-links i:hover{
+    color:#FF3343;
+}
+
+
+/* media query for mobile */
+@media screen and (max-width:576px) {
+    header{
+        margin:10px 0px;
+    }
+    header .navbar{
+        padding:10px 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    .navbar .lists{
+        display: none;
+    }
+    .banner-image{
+       flex-direction: column;
+       margin:0;
+    }
+    .banner-left img{
+        width:250px;
+    }
+    .banner-right{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .banner-right .user-intro h1{
+        font-size:26px;
+        margin-top: 5px;
+    }
+    .banner-right .user-intro p{
+        font-size:18px;
+        font-weight: 200;
+        margin:15px 0px;
+    }
+    .aboutme{
+        margin-bottom: 20px;
+    }
+    .service .cards{
+        padding:30px 0px 0px 10px;
+        margin-left:10px;
+        margin-right: 10px;
+    }
+    .cards .service-offer{
+        grid-template-columns: 1fr;
+        row-gap:30px;
+    }
+    .service-info h3{
+        font-size:26px;
+        font-weight: 400;
+    }
+    .service-info p{
+        font-size:20px;
+        font-weight: 200;
+    }
+    .cards .past-work{
+        flex-direction: column;
+        margin-left: 0px
+    }
+    .project-complete{
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+    .featured-projects{
+        margin:40px 20px 0px 20px;
+    }
+    .featured-heading{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .featured-heading p{
+        font-size:20px;
+        font-weight: 200;
+    }
+    .project-list{
+        grid-template-columns: 1fr;
+    }
+    .project-list .card-body{
+        height: 200px;
+        width: 100%;
+    }
+    .card-body .project-img img{
+        height: 150px;
+        width: 270px;
+        padding:25px 0px;
+    }
+    .bottom-link{
+        margin:30px 0px;
+        text-align: center;
+    }
+    .bottom-link .link{
+        margin:0px 10px;
+    }
+    .contact-us{
+        margin:60px 0px;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+        padding:50px 25px;
+    }
+    .contact-info h1{
+        font-size:26px;
+    }
+    .contact-info p{
+        font-size:20px;
+        font-weight: 200;
+    }
+    .contact-btn{
+        margin-top: 30px;
+    }
+    .footer{
+        padding:20px;
+        grid-template-columns: 150px 1fr;
+        column-gap: 100px;
+    }
+    .social-links{
+        margin-top: 0px;
+    }
+    .social-links span{
+        margin:0px 7px;
+    }
+}
+
+/* media query for tablet */
+@media screen and (min-width:600px) and (max-width:830px){
+  .navbar .lists{
+    margin-left: 40px;
+  }
+  .navbar .lists .list-item{
+    margin:0px 20px;
+  }
+  .fa-sort-down{
+    margin-left: 0px;
+    position:relative;
+    right:10px;
+  }
+  .banner-image{
+    margin:0px 10px;
+  }
+  .banner-right .user-intro p{
+    font-size:20px;
+  }
+  .aboutme{
+    margin:30px 0px;
+  }
+  .service .cards{
+    margin:0px;
+  }
+  .cards .service-offer{
+    column-gap: 30px;
+  }
+  .service-info h3{
+    font-size:26px;
+  }
+  .service-info p{
+    font-size:20px;
+  }
+  .cards .past-work{
+    margin-left: 0px;
+  }
+  .past-work .experience{
+    margin-right: 30px;
+  }
+  .project-complete{
+    column-gap: 30px;
+  }
+  .project-work-card {
+    padding:15px 50px;
+  }
+  .featured-projects{
+    margin:60px 30px;
+  }
+  .featured-heading p{
+    font-size:20px;
+  }
+  .project-list{
+    grid-template-columns: 1fr;
+  }
+  .project-info{
+    text-align: center;
+  }
+  .project-info h1{
+    font-size:35px;
+  }
+  .contact-us{
+    margin:60px 30px;
+  }
+  .contact{
+    grid-template-columns: 1fr;
+  }
+  .contact-info p{
+    font-size:20px;
+  }
+  .bottom-link .link{
+    margin:0px 60px;
+    font-size:20px;
+  }
+  .footer{
+    border:none;
+    padding:20px 30px;
+    grid-template-columns: 300px 1fr;
+  }
+  .social-links span{
+    float:right;
+    margin:0px 20px;
+  }
+  .social-links i{
+    font-size:24px;
+  }
+  .know-more a, .know-more{
+    font-size:20px;
+  }
+
+}
